@@ -96,6 +96,15 @@ public class PlayerCapeRegistry {
     }
 
     /**
+     * Get the minecraft resource identifier for a username
+     * @param username Player username
+     * @return Identifier
+     */
+    public Identifier getIdentifierForPlayer(String username) {
+        return constructCapeIdentifier(registry.get(username.toLowerCase()));
+    }
+
+    /**
      * Check if a player shows up in the cape registry
      * 
      * @param username Player username
