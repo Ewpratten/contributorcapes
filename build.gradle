@@ -28,8 +28,8 @@ dependencies {
     modCompile "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     // ARRP
-    modImplementation group: 'net.devtech', name: 'arrp', version: '0.1.7'
-    include group: 'net.devtech', name: 'arrp', version: '0.1.7'
+    modImplementation group: 'net.devtech', name: 'arrp', version: '0.2.6'
+    include group: 'net.devtech', name: 'arrp', version: '0.2.6'
 }
 
 processResources {

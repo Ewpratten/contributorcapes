@@ -24,7 +24,7 @@ public class PlayerCapeRegistry {
     private static PlayerCapeRegistry instance;
 
     // Internal resource pack for cape assets
-    private RuntimeResourcePack resourcePack = RuntimeResourcePack.create("contributorcapes_caperegistry:resource");
+    private RuntimeResourcePack resourcePack = RuntimeResourcePack.create("contributorcapes:resource");
 
     // Counter for registered capes
     private int lastCapeID = 0;
@@ -119,7 +119,7 @@ public class PlayerCapeRegistry {
      */
     public void loadResources() {
         logger.log(Level.INFO, "Adding RRPCallback event");
-        RRPCallback.EVENT.register(a -> a.add(1, resourcePack));
+        RRPCallback.EVENT.register(a -> a.add(resourcePack));
     }
 
     /**
