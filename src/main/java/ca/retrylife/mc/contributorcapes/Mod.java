@@ -18,9 +18,6 @@ public class Mod implements ModInitializer {
     public static final String MODID = "contributorcapes";
     public static final String NAME = "Contributor Capes";
 
-    // Define a resource pack for the capes
-    public static final RuntimeResourcePack RESOURCE_PACK = RuntimeResourcePack.create("contributorcapes:resource");
-
     // Define a logger
     private static final Logger logger = LogManager.getLogger(NAME);
 

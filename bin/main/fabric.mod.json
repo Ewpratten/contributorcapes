@@ -1,0 +1,25 @@
+{
+    "schemaVersion": 1,
+    "id": "contributorcapes",
+    "version": "${version}",
+    "name": "Contributor Capes",
+    "description": "A small Minecraft mod for allowing modpack developer to award capes to project contributors.",
+    "authors": [
+        "Xnor50"
+    ],
+    "license": "GPLv3",
+    "environment": "client",
+    "entrypoints": {
+        "main": [
+            "ca.retrylife.mc.contributorcapes.Mod"
+        ]
+    },
+    "mixins": [
+        "contributorcapes.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.8.4+build.198",
+        "fabric": "*",
+        "minecraft": "1.16.2"
+    }
+}
